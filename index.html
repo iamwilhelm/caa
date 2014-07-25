@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <section>
+    <h2>
+      <a name="what-is-it" class="anchor" href="#what-is-it"><span class="octicon octicon-link"></span></a>
+      What is it?
+    </h2>
+
+    <p>
+      CAA (Concepts, Architecture, and Algorithms) is a weekly get-together session
+      amongst Pebble engineers with rotating themes of programming concepts,
+      architecture, and algorithms.
+    </p>
+
+    <h2>
+      <a name="why-do-we-do-it" class="anchor" href="#why-do-we-do-it"><span class="octicon octicon-link"></span></a>
+      Why do we do it?
+    </h2>
+
+    <p>
+      We believe that engineers like working in an environment where we're continually
+      learning. To work with excellent peers is a perk in itself, and we would like to
+      continually get better as programmers.
+    </p>
+
+    <p>
+      The focus is to learn ideas we can carry with us, rather than things that can
+      easily be made obsolete.
+    </p>
+
+    <h2>
+      <a name="the-three-rotating-themes" class="anchor" href="#the-three-rotating-themes"><span class="octicon octicon-link"></span></a>
+      The three rotating themes
+    </h2>
+
+    <p>
+      Concept sessions will be new/novel/neglected ideas in programming. There are
+      many ways to program, and certain ideas expand your mind to possibilities. On
+      topic examples will be promises, ruby object model, metaprogramming, functional
+      reactive programming, the actor model. We will not cover how to use specific
+      languages and frameworks, and those things are easily made obsolete.
+    </p>
+
+    <p>
+      Architecture sessions will be where we're presented with requirements, and have
+      to design the system. As the system is being designed, more requirements will be
+      added, and we will try to come up with solutions to the new requirements, and see
+      how that changes the design.
+    </p>
+
+    <p>
+      Algorithm sessions will be where we explore a data structure, and the algorithms
+      you can perform on it as a result. We will work on solving the problem together.
+      These will probably mimic interview problems.
+    </p>
+
+    <h2>
+      <a name="some-general-rules" class="anchor" href="#some-general-rules"><span class="octicon octicon-link"></span></a>
+      Some general rules
+    </h2>
+
+    <p>
+      Some general rules for the sessions that we've worked out so far:
+    </p>
+
+    <ol>
+      <li> No power point presentations </li>
+      <li> Less than 30 mins of one person talking </li>
+      <li> Topics constrained to less than 1 hour of preparation </li>
+      <li> Topic constrained to the main 2 or 3 points </li>
+    </ol>
+
+  </section>
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
