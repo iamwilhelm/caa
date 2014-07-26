@@ -5,20 +5,18 @@ date:   2014-07-16 08:03:51
 categories: algorithm trees
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+## Construction
 
-Jekyll also offers powerful support for code snippets:
+Prim's algorithms. Starting with a single node as the tree, pick the lowest weight
+edge connected to the tree that doesn't cause a cycle.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+## Applications
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+
+
+## References
+
+[Mimimum spanning tree][minimum spanning tree]
 
 [jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+[minimum spanning tree]:    http://algs4.cs.princeton.edu/43mst/
