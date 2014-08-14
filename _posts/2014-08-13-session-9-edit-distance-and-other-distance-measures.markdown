@@ -11,16 +11,27 @@ Given two words word1 and word2, find the minimum number of steps required to co
 
 You have the following 3 operations permitted on a word:
 
-a) Insert a character
-b) Delete a character
-c) Replace a character
+- Insert a character
+- Delete a character
+- Replace a character
  
 ## Solution
 
-## Other distance measures
+    def levenshtein(orig, target)
+      if orig.empty?
+        return target.length
+      elsif target.empty?
+        return orig.length
+      elsif orig[0] == target[0]
+        return levenshtein(orig[1..-1], target[1..-1])
+      else
+        return [levenshtein(orig, orig[0] + target),
+                levenshtein(orig, target[1..-1]),
+                levenshtein(orig, orig[0] + target[1..-1])].min + 1
+      end
+    end
 
 ## References
 
-[Fast and Easy Levenstein distance using a Trie][http://stevehanov.ca/blog/index.php?id=114]
-
+[Fast and Easy Levenshtein distance using a Trie](http://stevehanov.ca/blog/index.php?id=114)
 
