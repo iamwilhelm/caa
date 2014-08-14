@@ -17,6 +17,8 @@ You have the following 3 operations permitted on a word:
  
 ## Solution
 
+The following is the naive solution
+
     def levenshtein(orig, target)
       if orig.empty?
         return target.length
@@ -30,6 +32,10 @@ You have the following 3 operations permitted on a word:
                 levenshtein(orig, orig[0] + target[1..-1])].min + 1
       end
     end
+
+We're not being efficient here, because we're calculating the same levenshteins at
+various times. So if we cached our results, it'd be more time efficient. This then
+becomes a problem in dynamic programming.
 
 ## References
 
