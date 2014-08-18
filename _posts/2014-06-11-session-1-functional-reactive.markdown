@@ -45,6 +45,6 @@ copy of the DOM, and diff the generated shadow DOM against the original shadow D
 
 ## References
 
-[Removing User Interface Complexity, or Why React is Awesome][http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome]
+[Removing User Interface Complexity, or Why React is Awesome](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome)
 
 
