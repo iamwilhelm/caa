@@ -37,6 +37,11 @@ We're not being efficient here, because we're calculating the same levenshteins 
 various times. So if we cached our results, it'd be more time efficient. This then
 becomes a problem in dynamic programming.
 
+## Dynamic programming
+
+Dynamic programming is a fancy way of saying recursion with caching.
+
+
 ## References
 
 [Fast and Easy Levenshtein distance using a Trie](http://stevehanov.ca/blog/index.php?id=114)
