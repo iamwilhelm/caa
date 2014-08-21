@@ -2,7 +2,7 @@
 layout: post
 title:  "Session 8 Heroku for Scientific Experiments"
 date:   2014-07-30 17:00:00
-categories: concept functional
+categories: architecture
 ---
 
 Back in the 90's when the internet was getting started, people ran their own servers. 

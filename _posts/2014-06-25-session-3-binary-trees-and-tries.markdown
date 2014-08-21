@@ -2,7 +2,7 @@
 layout: post
 title:  "Session 3 Binary Trees and Tries"
 date:   2014-06-25 08:03:51
-categories: algorithm trees
+categories: algorithm
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

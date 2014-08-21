@@ -2,7 +2,7 @@
 layout: post
 title:  "Session 2 Designing Game Object System"
 date:   2014-06-18 08:03:51
-categories: architecture game
+categories: architecture
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

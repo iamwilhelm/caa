@@ -2,7 +2,7 @@
 layout: post
 title:  "Session 7 Basic Cryptography and Diffie-Hellman"
 date:   2014-07-23 05:03:51
-categories: concept cryptography
+categories: concept
 ---
 
 There are three kinds of cryptography.

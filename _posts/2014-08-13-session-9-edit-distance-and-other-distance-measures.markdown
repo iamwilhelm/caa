@@ -2,7 +2,7 @@
 layout: post
 title:  "Session 9 Edit distance and other distance measures"
 date:   2014-08-13 08:03:51
-categories: algorithm distance
+categories: algorithm
 ---
 
 ## Problem

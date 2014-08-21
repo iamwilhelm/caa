@@ -2,7 +2,7 @@
 layout: post
 title:  "Session 1 Functional Reactive"
 date:   2014-06-11 08:03:51
-categories: concept functional
+categories: concept
 ---
 
 React.js is an example of a functional design to UI. There are two main ideas, 

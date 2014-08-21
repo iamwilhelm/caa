@@ -2,7 +2,7 @@
 layout: post
 title:  "Session 4 Actor Model and Threads"
 date:   2014-07-02 08:03:51
-categories: concept concurrency
+categories: concept
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

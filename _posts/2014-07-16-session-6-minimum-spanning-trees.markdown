@@ -2,7 +2,7 @@
 layout: post
 title:  "Session 6 Minimum Spanning Trees"
 date:   2014-07-16 08:03:51
-categories: algorithm trees
+categories: algorithm
 ---
 
 ## Construction
