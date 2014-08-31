@@ -86,6 +86,9 @@ stop garbage collection when the allotted time was up.
 When looking up quadcopters run with Go, they run at 200Hz, with 5ms allocated for Go's
 garbage collection, which they can explicitly stop.
 
+Although this is an active field of research, we didn't seem to quite hit the nail on 
+the head when describing the solution.
+
 ## Misc
 
 The rest of the time, we talked about generational garbage collection, and other 
