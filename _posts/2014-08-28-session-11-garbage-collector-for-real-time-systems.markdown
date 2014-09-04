@@ -105,4 +105,5 @@ so you should ask him.
 - [Real-time garbage collection is real](http://michaelrbernste.in/2013/06/03/real-time-garbage-collection-is-real.html)
 - [Java garbage collection for real time system](http://www.drdobbs.com/jvm/java-garbage-collection-for-real-time-sy/184410684)
 - [Real-time Java, Part 4: Real-time garbage collection](http://www.ibm.com/developerworks/library/j-rtj4/)
+- [Visualization of Garbage Collection](http://spin.atomicobject.com/2014/09/03/visualizing-garbage-collection-algorithms/)
 
