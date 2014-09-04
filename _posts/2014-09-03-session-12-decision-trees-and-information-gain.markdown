@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Session 12 Decision trees and information gain"
-date:   2014-08-28 1:00:00
+date:   2014-09-4 1:00:00
 categories: algorithm
 ---
 
