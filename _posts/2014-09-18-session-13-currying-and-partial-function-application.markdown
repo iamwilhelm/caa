@@ -14,11 +14,11 @@ When you have a function with multiple arguments, we usually call it like so:
 We typically need all the arguments before we can call it. But what if we can 
 partially call a function?
 
-    foo(a, b) # This returns a function
+    bar = foo(a, b) # This returns a function
 
 Where the function can be called again with the last parameter later on.
 
-    foo(a, b)(c)
+    bar(c)
 
 
 ## Currying
@@ -26,6 +26,20 @@ Where the function can be called again with the last parameter later on.
 Currying is related to PFA, but a separate concept. It's a way to turn functions 
 with the signature foo(a, b, c) into foo(a)(b)(c). We're turning one function with
 mutliple arguments into multiple functions that take one argument
+
+    function curry(func: Function, arity: number) {
+      return function(x) {
+        if (arity === 1) {
+          return func(x);
+        } else {
+          return curry(func.bind(null, x), arity - 1);
+        }
+      };
+    }
+
+    function add(...args: number[]) {
+      return args.reduce(function(a,b) { return a + b; })
+    }
 
 ## Applications
 
