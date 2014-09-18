@@ -5,6 +5,37 @@ date:   2014-09-18 5:00:00
 categories: concept
 ---
 
+## For loops are too much
+
+When using a for loop, it's flexible, but contains too many details you don't 
+actually care about.
+
+    for(i = 0; i < arr.length; i++) {
+      arr[i] = arr[i] * arr[i]
+    }
+
+We actually only care that we want to square every element. We don't actually
+care how to iterate through the array, when to stop iterating, and how to access
+the array.
+
+    _.map(arr, function(elem) {
+      return elem * elm
+    })
+
+Now, we don't have to care about how to iterate through the data structure. 
+We only have to care about how to transform each element. But Underscore.js
+has the argument order backwards. Instead, it should be:
+
+    squarer = _.map(function(elem) { return elem * elem })
+    squarer(arr)
+
+So then map can be specialized, stored as a function, and used later. Because 
+first class functions can be passed around, we can even pass it into a function
+to customizable functions.
+
+Essentially, we're partially applying the function, as a special case, so we 
+can use it later.
+
 ## Partial Function Application
 
 When you have a function with multiple arguments, we usually call it like so:
@@ -20,6 +51,21 @@ Where the function can be called again with the last parameter later on.
 
     bar(c)
 
+An implementation might be:
+
+    function partial(fn /*, args...*/) {
+      // A reference to the Array#slice method.
+      var slice = Array.prototype.slice;
+    
+      // Convert arguments object to an array, removing the first argument.
+      var args = slice.call(arguments, 1);
+       
+      return function() {
+        // Invoke the originally-specified function, passing in all originally-
+        // specified arguments, followed by any just-specified arguments.
+        return fn.apply(this, args.concat(slice.call(arguments, 0)));
+      };
+    }
 
 ## Currying
 
@@ -41,10 +87,10 @@ mutliple arguments into multiple functions that take one argument
       return args.reduce(function(a,b) { return a + b; })
     }
 
-## Applications
+## Composition
 
-This is more useful for languages where functions are first-class objects. When you 
-can pass functions around, you can delay execution. 
+    comp2 :: (a -> b) -> (b -> b -> c) -> (a -> a -> c)
+    comp2 f g = (\x y -> g (f x) (f y))
 
 ## References
 
